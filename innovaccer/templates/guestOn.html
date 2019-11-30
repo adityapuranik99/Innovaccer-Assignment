@@ -1,0 +1,121 @@
+
+
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<head>
+       <style>
+              .chat_window {
+  position: absolute;
+  margin-top:80px;
+  width: 500px;
+ 
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  
+}
+.form-control{
+      
+      
+       width: 500px;
+
+}
+       </style>
+</head>    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <title>Reusable Form Demo</title>
+    <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<head>
+       <style>
+              .jumbotron{
+                     background-color: khaki;
+                     width: 600px;
+                     margin-left: 335px;
+              }
+              #name {
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #contact{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #email{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #room{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #name1{
+                     margin-left: 100px;
+              }
+              #contact1{
+                     margin-left: 100px;
+              }
+              #email1{
+                     margin-left: 100px;
+              }
+              #room1{
+                     margin-left: 100px;
+              }
+              
+       </style>
+
+        <script type="text/javascript">
+        function getTimeStamp() {
+           var now = new Date();
+           return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
+                         + ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now
+                         .getSeconds()) : (now.getSeconds())));
+        }
+        function setTime() {
+            document.getElementById('field').value = getTimeStamp();
+        }
+       </script>
+       <script type="text/javascript">
+              function closeCurrentTab(){
+                     var conf=confirm("Are you sure, you want to close this tab?");
+                     if(conf==true){
+                            window.open('', '_self', ''); 
+                            window.close();
+                     }
+              }
+       </script>
+</head>
+<body onload="setTime()" style="background-color: darkslategrey;">
+<div class="jumbotron">
+<h4><center>Hi {{text1}}.</center></h4>
+</div>
+
+
+<div class="chat_window">
+<div>
+        <center>{{text}}</center>
+        <form action="{{url_for('guestOn')}}" method='POST'>
+                <center><h4>Please enter room no. to proceed:</h4></center>     
+                <label for="room" id="room" style="margin-left: 230px;">Room:</label>
+                <center><input type="text" class="form-control" id="room" name="room" placeholder="Please enter your room no" style="width: 250px; margin-right: 70px; "></center>     
+                <center><button type="button" class="btn btn-primary" style = "margin-top: 40px" onclick="this.form.timeField.value=getTimeStamp()">Get time stamp</button></center>
+                <center><input type="text" name="timeField" size="20" style = "margin-top: 10px"></center>
+                <center><button type="submit" name = "CheckOut" class="btn btn-primary" style="margin-top: 10px;" onclick="">Check Out</button></center>
+                <center><button type="button" name="Exit" class="btn btn-danger" style="margin-top: 50px;" onclick="location.href='http://127.0.0.1:5000/'">Exit</button></center>
+        </form>  
+</div>
+</body>
+</div> 
+
+

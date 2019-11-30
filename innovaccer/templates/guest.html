@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<head>
+       <style>
+              .chat_window {
+  position: absolute;
+  margin-top:110px;
+  width: 800px;
+ 
+  height: 460px;
+  border-radius: 10px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  
+}
+.form-control{
+      
+      
+       width: 500px;
+
+}
+       </style>
+</head>    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <title>Reusable Form Demo</title>
+    <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<head>
+       <style>
+              .jumbotron{
+                     background-color: lightyellow;
+                     width: 600px;
+                     margin-left: 335px;
+              }
+              #name {
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #contact{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #email{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #room{
+                     width: 600px;
+                     margin-left: 100px;
+              }
+              #name1{
+                     margin-left: 100px;
+              }
+              #contact1{
+                     margin-left: 100px;
+              }
+              #email1{
+                     margin-left: 100px;
+              }
+              #room1{
+                     margin-left: 100px;
+              }
+              #submit1{
+                     margin-bottom: 10px;
+              }
+              
+       </style>
+</head>
+<body style="background-color: darkslategray;">
+<div class="jumbotron">
+<h2><center>Guest</center></h2>
+</div>
+
+
+<div class="chat_window">
+<form action="" method="post" role="form">
+<center>Please enter your details</center>
+<div class="form-group">
+<label for="name" id="name1">Name:</label>
+<input type="text" class="form-control" id="name" name="name" placeholder="What's your name?">
+
+<label for="contact" id = "contact1">Contact:</label>
+<input type="text" class="form-control" id="contact" name="contact" placeholder="Enter your mobile no">
+
+<label for="email" id ="email1">Email:</label>
+<input type="text" class="form-control" id="email" name="email" placeholder="Please enter your email.">
+
+<label for="room" id="room1">Room:</label>
+<input type="room" class="form-control" id="room" name="room" placeholder="Enter the room no. provided by the host.">
+
+</div>
+<div>
+<center><button type="submit" class="btn btn-primary" id="submit1" >Sign Up</button></center>
+<center><button type="button" class="btn btn-primary" id="button1" onclick="location.href='http://127.0.0.1:5000/guestOn'">Proceed to check out</button></center></div>
+</form>{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+
+{% for message in messages %}
+{% if "Error" not in message[1]: %}
+<div class="alert alert-info">
+       <strong>Success! </strong> Please move to the allocated room.</div>
+{% endif %}
+
+{% if "Error" in message[1]: %}
+<div class="alert alert-warning">
+       Please enter the correct details</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+<center><button type="button" class="btn btn-danger" id="button1" onclick="location.href='http://127.0.0.1:5000/'">Back to Home</button></center></div>
+</div>
+</div> 
+
+</body>

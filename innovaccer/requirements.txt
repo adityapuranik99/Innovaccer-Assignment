@@ -1,0 +1,9 @@
+firebase_admin==3.2.0
+python==3.7.3
+flask==1.1.1
+twilio
+smtplib
+ssl
+wtforms
+
+
