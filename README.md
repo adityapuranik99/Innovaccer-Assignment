@@ -41,7 +41,7 @@ flaskenv\Scripts\activate
 ```
 python index.py
 ```
-<br/> The server is activated. By default you can find it on http:127.0.0.1:5000/<br/>
+<br/> The server is activated. By default you can navigate to http:127.0.0.1:5000/<br/>
 ![snippet(1)](https://user-images.githubusercontent.com/41595533/69911022-2b483580-143b-11ea-9e00-6ec8444ae095.JPG)
 ![snippet(2)](https://user-images.githubusercontent.com/41595533/69911023-2b483580-143b-11ea-91f7-512790656850.JPG)
 
@@ -69,10 +69,21 @@ Approach On the front end there are 4 pages home, host, guest, guestOn. Home ask
 
 ## Server pages
 <br/> ```/ ```
-<br/>Directs to the main page
+* Directs to the main page
 <br/> ```/host ```
-<br/>Directs to the page for hosts where you can host the meeting
+* Directs to the page for hosts where you can host the meeting
 <br/> ```/guest ```
-<br/>Directs to the page for guests where you can attend the meeting.
+* Directs to the page for guests where you can attend the meeting.
 <br/> ```/guestOn ```
-<br/>Directs to the page where guest can exit ( redirects to homepage)
+* Directs to the page where guest can exit ( redirects to homepage)
+
+## Database
+<br/> My project uses Firebase which is a no SQL database. We have used this against traditional databases as it makes integration and real time syncing much easier and quicker.
+<br/>Each database has a unique key which must be included in the project and accessed through the python code.
+### Attributes in our database:
+![db1](https://user-images.githubusercontent.com/41595533/69911131-b8d85500-143c-11ea-9738-c276befcd08e.JPG)
+<br/>
+All the values captured from the form are stored here.
+
+
+
