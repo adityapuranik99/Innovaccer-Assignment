@@ -100,7 +100,9 @@ class ReusableForm1(Form):
                     'CheckIn' : now,
                     'Contact' : contact,
                     'Room' : room
-                })    
+                })
+            else:
+                flash('Error: All the form fields are required. ')
     
         if form.validate():
         # Save the comment here.
@@ -139,9 +141,10 @@ class ReusableForm1(Form):
                 for val in ref.get().items():
                     if(str(val[1]['GuestName'])==GuestName):
                         response = "The guest details are \nName: " + val[1]['GuestName']+"\nEmail: "+val[1]['GuestEmail'] + "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nHost Email: " + val[1]['Email'] + "\nRoom: " + val[1]['Room']
+                        response1 = val[1]['Email']
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response1
                 mailto2 = GuestEmail
                 msg = response
 
@@ -175,8 +178,8 @@ class ReusableForm1(Form):
                 # change the "from_" number to your Twilio number and the "to" number
                 # to the phone number you signed up for Twilio with, or upgrade your
                 # account to send SMS to any phone number
-                client.messages.create(to="+919950957199", 
-                                       from_="+15087090116", 
+                client.messages.create(to="+919950957199", #Please enter your registered mobile no.
+                                       from_="+15087090116", #"Please enter your twilio phone no.
                                        body=response)
             elif room == 'D123':
                 meet_ref = ref.child('Meeting 2')
@@ -190,9 +193,10 @@ class ReusableForm1(Form):
                 for val in ref.get().items():
                     if(str(val[1]['GuestName'])==GuestName):
                         response = "The guest details are \nName: " + val[1]['GuestName']+"\nEmail: "+val[1]['GuestEmail'] + "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nHost Email: " + val[1]['Email'] + "\nRoom: " + val[1]['Room']
+                        response1 = val[1]['Email']
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response1
                 mailto2 = GuestEmail
                 msg = response
 
@@ -226,8 +230,8 @@ class ReusableForm1(Form):
                 # change the "from_" number to your Twilio number and the "to" number
                 # to the phone number you signed up for Twilio with, or upgrade your
                 # account to send SMS to any phone number
-                client.messages.create(to="+919950957199", 
-                                       from_="+15087090116", 
+                client.messages.create(to="+919950957199", #Please enter your registered mobile no. 
+                                       from_="+15087090116", #"Please enter your twilio phone no. 
                                        body=response)
             elif room == 'D205':
                 meet_ref = ref.child('Meeting 3')
@@ -241,11 +245,11 @@ class ReusableForm1(Form):
                 for val in ref.get().items():
                     if(str(val[1]['GuestName'])==GuestName):
                         response = "The guest details are \nName: " + val[1]['GuestName']+"\nEmail: "+val[1]['GuestEmail'] + "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nHost Email: " + val[1]['Email'] + "\nRoom: " + val[1]['Room']
-                        response1 = val[1]['GuestEmail']
+                        response1 = val[1]['Email']
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
                 print(response1)
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response1
                 mailto2 = GuestEmail
                 msg = response
 
@@ -279,8 +283,8 @@ class ReusableForm1(Form):
                 # change the "from_" number to your Twilio number and the "to" number
                 # to the phone number you signed up for Twilio with, or upgrade your
                 # account to send SMS to any phone number
-                client.messages.create(to="+919950957199", 
-                                       from_="+15087090116", 
+                client.messages.create(to="+919950957199", #Please enter your registered mobile no.
+                                       from_="+15087090116", #"Please enter your twilio phone no. 
                                        body=response)
             elif room == 'D113':
                 meet_ref = ref.child('Meeting 4')
@@ -294,9 +298,10 @@ class ReusableForm1(Form):
                 for val in ref.get().items():
                     if(str(val[1]['GuestName'])==GuestName):
                         response = "The guest details are \nName: " + val[1]['GuestName']+"\nEmail: "+val[1]['GuestEmail'] + "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nHost Email: " + val[1]['Email'] + "\nRoom: " + val[1]['Room']
+                        response1 = val[1]['Email']
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response1
                 mailto2 = GuestEmail
                 msg = response
 
@@ -330,8 +335,8 @@ class ReusableForm1(Form):
                 # change the "from_" number to your Twilio number and the "to" number
                 # to the phone number you signed up for Twilio with, or upgrade your
                 # account to send SMS to any phone number
-                client.messages.create(to="+919950957199", 
-                                       from_="+15087090116", 
+                client.messages.create(to="+919950957199", #"Please enter your registered mobile no. 
+                                       from_="+15087090116", #"Please enter your twilio phone no. 
                                        body=response)
             elif room == 'D215':
                 meet_ref = ref.child('Meeting 5')
@@ -345,9 +350,10 @@ class ReusableForm1(Form):
                 for val in ref.get().items():
                     if(str(val[1]['GuestName'])==GuestName):
                         response = "The guest details are \nName: " + val[1]['GuestName']+"\nEmail: "+val[1]['GuestEmail'] + "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nHost Email: " + val[1]['Email'] + "\nRoom: " + val[1]['Room']
+                        response1 = val[1]['Email']
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response1
                 mailto2 = GuestEmail
                 msg = response
 
@@ -381,9 +387,11 @@ class ReusableForm1(Form):
                 # change the "from_" number to your Twilio number and the "to" number
                 # to the phone number you signed up for Twilio with, or upgrade your
                 # account to send SMS to any phone number
-                client.messages.create(to="+919950957199", 
-                                       from_="+15087090116", 
-                                       body=response)    
+                client.messages.create(to="+919950957199", #"Please enter your registered mobile no. 
+                                       from_="+15087090116", #"Please enter your twilio phone no.
+                                       body=response)
+            else:
+                flash('Error: All the form fields are required. ')
     
         if form.validate():
         # Save the comment here.
@@ -397,7 +405,10 @@ class ReusableForm1(Form):
         form = ReusableForm1(request.form)
         response = ""
         response1 = ""
-        response2 = "" 
+        response2 = ""
+        response3 = ""
+        response4 = ""
+        errorresponse =""
         print(form.errors)
         if (request.method == 'POST'):
             data = request.form['timeField']
@@ -412,13 +423,15 @@ class ReusableForm1(Form):
                     if(str(val[1]['Room'])==room):
                         response="\nHosted by: " + val[1]['Name'] + " \nat " + val[1]['CheckIn']
                         response1 = val[1]['GuestEmail']
+                        response3 = val[1]['Email']
+                        response4 = val[1]['GuestName']
                         response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response3
                 mailto2 = response1
                 msg = response2
 
@@ -427,10 +440,11 @@ class ReusableForm1(Form):
                 mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
-                mailServer.sendmail(gmailaddress, mailto1 , msg)
+                #mailServer.sendmail(gmailaddress, mailto1 , msg)
                 mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
+                errorresponse =""
             elif room == 'D123':
                 meet_ref = ref.child('Meeting 2')
                 meet_ref.update({
@@ -440,13 +454,15 @@ class ReusableForm1(Form):
                     if(str(val[1]['Room'])==room):
                         response="\nHosted by: " + val[1]['Name'] + " \nat " + val[1]['CheckIn']
                         response1 = val[1]['GuestEmail']
+                        response3 = val[1]['Email']
+                        response4 = val[1]['GuestName']
                         response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response3
                 mailto2 = response1
                 msg = response2
 
@@ -455,10 +471,11 @@ class ReusableForm1(Form):
                 mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
-                mailServer.sendmail(gmailaddress, mailto1 , msg)
+                #mailServer.sendmail(gmailaddress, mailto1 , msg)
                 mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit() 
+                errorresponse=""
             elif room == 'D205':
                 meet_ref = ref.child('Meeting 3')
                 meet_ref.update({
@@ -468,13 +485,15 @@ class ReusableForm1(Form):
                     if(str(val[1]['Room'])==room):
                         response="\nHosted by: " + val[1]['Name'] + " \nat " + val[1]['CheckIn']
                         response1 = val[1]['GuestEmail']
+                        response3 = val[1]['Email']
+                        response4 = val[1]['GuestName']
                         response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response3
                 mailto2 = response1
                 msg = response2
 
@@ -483,10 +502,11 @@ class ReusableForm1(Form):
                 mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
-                mailServer.sendmail(gmailaddress, mailto1 , msg)
+                #mailServer.sendmail(gmailaddress, mailto1 , msg)
                 mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit() 
+                errorrespoonse = ""
             elif room == 'D113':
                 meet_ref = ref.child('Meeting 4')
                 meet_ref.update({
@@ -496,13 +516,15 @@ class ReusableForm1(Form):
                     if(str(val[1][''])==room):
                         response="\nHosted by: " + val[1]['Name'] + " \nat " + val[1]['CheckIn']
                         response1 = val[1]['GuestEmail']
+                        response3 = val[1]['Email']
+                        response4 = val[1]['GuestName']
                         response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response3
                 mailto2 = response1
                 msg = response2
 
@@ -511,10 +533,11 @@ class ReusableForm1(Form):
                 mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
-                mailServer.sendmail(gmailaddress, mailto1 , msg)
+                #mailServer.sendmail(gmailaddress, mailto1 , msg)
                 mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit() 
+                errorresponse =""
             elif room == 'D215':
                 meet_ref = ref.child('Meeting 5')
                 meet_ref.update({
@@ -524,13 +547,15 @@ class ReusableForm1(Form):
                     if(str(val[1]['Room'])==room):
                         response="\nHosted by: " + val[1]['Name'] + " \nat " + val[1]['CheckIn']
                         response1 = val[1]['GuestEmail']
+                        response3 = val[1]['Email']
+                        response4 = val[1]['GuestName']
                         response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
                 gmailaddress = "innovaccerap@gmail.com"
                 gmailpassword = "innov@99"
-                mailto1 = "adityapuranik99@gmail.com"
+                mailto1 = response3
                 mailto2 = response1
                 msg = response2
 
@@ -539,11 +564,14 @@ class ReusableForm1(Form):
                 mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
-                mailServer.sendmail(gmailaddress, mailto1 , msg)
+                #mailServer.sendmail(gmailaddress, mailto1 , msg)
                 mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit() 
-        return render_template('guestOn.html', text1 = response1, text = response)
+                errorresponse =""
+            else:
+                errorresponse = "Please enter the correct room no."
+        return render_template('guestOn.html', text1 = response4, text = response, text2 = errorresponse)
 
 if __name__ == "__main__":
     app.run()
