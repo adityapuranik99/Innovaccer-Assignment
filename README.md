@@ -24,11 +24,11 @@ Tools Used
 # Installation
 Assuming that the python3 is already installed. Clone the repository.
 
-'''
+```
 cd innovaccer
-''' 
+
 pip3 install -r requirements.txt
-'''
+```
 
 # Development Setup
 #Approach On the front end there are m3 pages hime, host, guest, guestOn. Home asks whether you want to host a meeting or attend a metting.
