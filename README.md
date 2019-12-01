@@ -47,7 +47,7 @@ python index.py
 
 
 # Development Setup
-Approach On the front end there are 4 pages home, host, guest, guestOn. Home asks whether you want to host a meeting or attend a metting. <br/>
+Approach: On the front end there are 4 pages - home, host, guest, guestOn. Home asks whether you want to host a meeting or attend a metting. <br/>
 ![Home1](https://user-images.githubusercontent.com/41595533/69910726-1d43e600-1436-11ea-9c3e-c5e7c730251d.JPG)
 
 ### 1. If you host a meeting<br/>
