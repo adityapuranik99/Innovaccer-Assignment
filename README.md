@@ -68,15 +68,15 @@ Approach: On the front end there are 4 pages - home, host, guest, guestOn. Home 
 **Note:** Make sure you enter the same room number as the host, and while checking out, in order for the room to be alloted properly.
 
 ## Server pages
-<br/> ```/ ```
-* Directs to the main page
-<br/> ```/host ```
-* Directs to the page for hosts where you can host the meeting
-<br/> ```/guest ```
-* Directs to the page for guests where you can attend the meeting.
-<br/> ```/guestOn ```
-* Directs to the page where guest can exit ( redirects to homepage)
 
+* Directs to the main page
+<br/> ```/ ```
+* Directs to the page for hosts where you can host the meeting
+<br/> ```/host ```
+* Directs to the page for guests where you can attend the meeting.
+<br/> ```/guest ```
+* Directs to the page where guest can exit ( redirects to homepage)
+<br/>  ```/guestOn ```
 ## Database
 <br/> My project uses Firebase which is a no SQL database. We have used this against traditional databases as it makes integration and real time syncing much easier and quicker.
 <br/>Each database has a unique key which must be included in the project and accessed through the python code.
