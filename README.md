@@ -32,6 +32,7 @@ pip3 install -r requirements.txt
 # Development Setup
 Approach On the front end there are 4 pages home, host, guest, guestOn. Home asks whether you want to host a meeting or attend a metting.
 
+
 ### 1. If you host a meeting
 <br/>
 **Frontend:**
