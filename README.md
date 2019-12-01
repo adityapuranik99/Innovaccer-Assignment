@@ -85,7 +85,16 @@ Approach: On the front end there are 4 pages - home, host, guest, guestOn. Home 
 <br/>
 All the values captured from the form are stored here.
 
+# Important points
 
+### Allotment of Rooms
+<br/> There are only five rooms in the database. Please access using these only or it would prompt an error. 
+<br/> **Rooms : D317, D123, D205, D113, D215**
+
+### Twilio Account
+<br/> The free account only allows you to send messages to the number you registered with on Twilio. Please enter your registered number in the space provided in the code to receive the messages. 
+
+To receive the messages on another number, please register with a premium account which is paid. 
 
 
 
