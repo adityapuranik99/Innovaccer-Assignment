@@ -15,7 +15,7 @@ Address visited.
 
 1. Python 3
 2. Flask
-3. WT forms
+3. WT forms : flexible forms validation and rendering library for Python.
 4. Twilio- for sending SMS
 5. smtplib , ssl - for sending email
 6. HTML, CSS Bootstrap- Frontend
@@ -27,6 +27,19 @@ Assuming that the python3 is already installed. Clone the repository.
 ```
 cd innovaccer
 pip3 install -r requirements.txt
+
+```
+<br/>Now you can run the code using 
+``` python index.py ```
+
+<br/>If any issue arises, activate the virtual environment in the innovaccer directory, and run the .py file again
+```
+pip install virtualenv
+virtualenv flaskenv
+flaskenv\Scripts\activate
+```
+```
+python index.py
 ```
 
 # Development Setup
@@ -36,12 +49,9 @@ Approach On the front end there are 4 pages home, host, guest, guestOn. Home ask
 ### 1. If you host a meeting<br/>
 ![Host1](https://user-images.githubusercontent.com/41595533/69910727-1ddc7c80-1436-11ea-8803-f57be18f6eb4.JPG)
 
+<br/>**Frontend:** It will take you to host.html where you have enter Name,Contact, Email, Room ( where he want to host the meeting ). Once you click the signup it updates the Databse accordingly.
 <br/>
-**Frontend:**
-<br/>It will take you to host.html where you have enter Name,Contact, Email, Room ( where he want to host the meeting ). Once you click the signup it updates the Databse accordingly.
-<br/>
-<br/>
-**Backend:** The textfields in the host.html page are WT forms, and the data can be directly retrieved in the python code. These values are then updated in the firebase databse. The firebase database required two keys in order to access the database, that is security account key and Google cloud SDK key both can be obtained from the respective sites in the form of JSON. Thus to give access to the database we have used, those two keys are already present in the folder. The database is useless if the JSON file is tampered. Currently the rooms are fixed and the host will have to enter a room from those specified rooms only, and the host's details get updated to the database. 
+<br/>**Backend:** The textfields in the host.html page are WT forms, and the data can be directly retrieved in the python code. These values are then updated in the firebase databse. The firebase database required two keys in order to access the database, that is security account key and Google cloud SDK key both can be obtained from the respective sites in the form of JSON. Thus to give access to the database we have used, those two keys are already present in the folder. The database is useless if the JSON file is tampered. Currently the rooms are fixed and the host will have to enter a room from those specified rooms only, and the host's details get updated to the database. 
 **Rooms : D317, D123, D205, D113, D215**
 
 ### 2. If you want to attend a meeting<br/>
