@@ -78,7 +78,7 @@ Approach: On the front end there are 4 pages - home, host, guest, guestOn. Home 
 * Directs to the page where guest can exit ( redirects to homepage)
 <br/>  ```/guestOn ```
 ## Database
-<br/> My project uses Firebase which is a no SQL database. We have used this against traditional databases as it makes integration and real time syncing much easier and quicker.
+<br/> The project uses Firebase, one of the popular NoSQL database. We have used this against traditional databases as it makes integration and real time syncing much easier and quicker.
 <br/>Each database has a unique key which must be included in the project and accessed through the python code.
 ### Attributes in our database:
 ![db1](https://user-images.githubusercontent.com/41595533/69911131-b8d85500-143c-11ea-9738-c276befcd08e.JPG)
