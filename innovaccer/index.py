@@ -154,7 +154,7 @@ class ReusableForm1(Form):
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
                 mailServer.sendmail(gmailaddress, mailto1 , msg)
-                mailServer.sendmail(gmailaddress, mailto2 , msg)
+                #mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
                 """
@@ -206,7 +206,7 @@ class ReusableForm1(Form):
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
                 mailServer.sendmail(gmailaddress, mailto1 , msg)
-                mailServer.sendmail(gmailaddress, mailto2 , msg)
+                #mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
                 """
@@ -259,7 +259,7 @@ class ReusableForm1(Form):
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
                 mailServer.sendmail(gmailaddress, mailto1 , msg)
-                mailServer.sendmail(gmailaddress, mailto2 , msg)
+                #mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
                 """
@@ -311,7 +311,7 @@ class ReusableForm1(Form):
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
                 mailServer.sendmail(gmailaddress, mailto1 , msg)
-                mailServer.sendmail(gmailaddress, mailto2 , msg)
+                #mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
                 """
@@ -363,7 +363,7 @@ class ReusableForm1(Form):
                 mailServer.starttls()
                 mailServer.login(gmailaddress , gmailpassword)
                 mailServer.sendmail(gmailaddress, mailto1 , msg)
-                mailServer.sendmail(gmailaddress, mailto2 , msg)
+                #mailServer.sendmail(gmailaddress, mailto2 , msg)
                 print(" \n Sent!")
                 mailServer.quit()
                 """
@@ -425,7 +425,7 @@ class ReusableForm1(Form):
                         response1 = val[1]['GuestEmail']
                         response3 = val[1]['Email']
                         response4 = val[1]['GuestName']
-                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
+                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nAddress: Candor Techspace, Industrial Area, Sector 62, Noida\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
@@ -456,7 +456,7 @@ class ReusableForm1(Form):
                         response1 = val[1]['GuestEmail']
                         response3 = val[1]['Email']
                         response4 = val[1]['GuestName']
-                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
+                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nAddress:Candor Techspace, Industrial Area, Sector 62, Noida\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
@@ -487,7 +487,7 @@ class ReusableForm1(Form):
                         response1 = val[1]['GuestEmail']
                         response3 = val[1]['Email']
                         response4 = val[1]['GuestName']
-                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
+                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nAddress:Candor Techspace, Industrial Area, Sector 62, Noida\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
@@ -518,7 +518,7 @@ class ReusableForm1(Form):
                         response1 = val[1]['GuestEmail']
                         response3 = val[1]['Email']
                         response4 = val[1]['GuestName']
-                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
+                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + " \nAddress: Candor Techspace, Industrial Area, Sector 62, Noida\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
@@ -549,7 +549,7 @@ class ReusableForm1(Form):
                         response1 = val[1]['GuestEmail']
                         response3 = val[1]['Email']
                         response4 = val[1]['GuestName']
-                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + "\nCheck Out:" + val[1]['CheckOut']
+                        response2 = "The meeting details are \nName: " + val[1]['GuestName']+ "\nCheck In: " +val[1]['CheckIn'] + "\nContact: " +val[1]['GuestContact'] + "\nHost Name: " + val[1]['Name'] + "\nRoom: " + val[1]['Room'] + ",\nAddress:Candor Techspace, Industrial Area, Sector 62, Noida\nCheck Out:" + val[1]['CheckOut']
                         print(""+response)
                         print(""+response1)
                         print(""+response2)
