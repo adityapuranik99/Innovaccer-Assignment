@@ -95,8 +95,9 @@ All the values captured from the form are stored here.
 <br/> **Rooms : D317, D123, D205, D113, D215**
 
 ### Twilio Account
-<br/> The free account only allows you to send messages to the number you registered with on Twilio. Please enter your registered number in the space provided in the code to receive the messages. 
-
+<br/> The free account only allows you to send messages to the number you registered with on Twilio. Please enter your registered number in the space provided in the code to receive the messages. <br/>
+![Message(1)](https://user-images.githubusercontent.com/41595533/69914526-82fe9500-146b-11ea-95ac-24926e9660a5.JPG)
+<br/>
 To receive the messages on another number, please register with a premium account which is paid. 
 
 
