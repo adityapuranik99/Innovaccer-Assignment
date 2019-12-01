@@ -65,7 +65,7 @@ Approach: On the front end there are 4 pages - home, host, guest, guestOn. Home 
 ![CheckOut1](https://user-images.githubusercontent.com/41595533/69910724-1d43e600-1436-11ea-9e15-7a9fb37a5c62.JPG)
 <br/>**Backend:** As the guest enters all the details, the room number is checked and the firebase database is updated accordingly to the respective room and host. After clicking on signup, a mail and sms is sent to the host about the guest's session.
 
-**Note:** Make sure you enter the same room number as the host, and while checking out, in order for the room to be alloted properly.
+**Note:** Since this is an entry management system, there's no need for authentication as per say. But since we are considering multiple meetings and hosts, which is a usual scenario, thus, we are determining which database to access by the particular Room No. Please make sure to enter the particular room while checking in, with the host, and checking out so as to update the data base correctly.
 
 ## Server pages
 
