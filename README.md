@@ -41,6 +41,10 @@ flaskenv\Scripts\activate
 ```
 python index.py
 ```
+<br/> The server is activated. By default you can find it on http:127.0.0.1:5000/<br/>
+![snippet(1)](https://user-images.githubusercontent.com/41595533/69911022-2b483580-143b-11ea-9e00-6ec8444ae095.JPG)
+![snippet(2)](https://user-images.githubusercontent.com/41595533/69911023-2b483580-143b-11ea-91f7-512790656850.JPG)
+
 
 # Development Setup
 Approach On the front end there are 4 pages home, host, guest, guestOn. Home asks whether you want to host a meeting or attend a metting. <br/>
